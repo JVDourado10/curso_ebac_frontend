@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+
+.sucesso {
+  background-color: rgb(24, 219, 24);
+  color: #fff;
+  padding: 8px;
+  font-weight: bold;
+  justify-self: start;
+  border-radius: 4px;
+  display: none;
+}
+
+.falha {
+  background-color: red;
+  color: #fff;
+  padding: 8px;
+  font-weight: bold;
+  justify-self: start;
+  border-radius: 4px;
+  display: none;
+}
+
+label {
+  margin-right: 8px;
+}
+
+input {
+  border-radius: 4px;
+  padding: 4px;
+}
+
+button {
+  padding: 4px 8px;
+  cursor: pointer;
+}
