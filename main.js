@@ -10,6 +10,8 @@ $(document).ready(function () {
 
     if (tarefasArray.includes(novaTarefa)) {
       alert("Você já adicinou essa tarefa");
+    } else if(novaTarefa == '') {
+      alert("Insira um nome para adicionar a tarefa");
     } else {
       $(addTarefa).appendTo(".tarefas ul");
       tarefasArray.push(novaTarefa);
@@ -18,7 +20,7 @@ $(document).ready(function () {
     $("input").val("");
   });
 
-  $("li").click(function () {
+  $("body").on("click", "li", function () {
     console.log($(this).css("text-decoration"));
     if ($(this).css("text-decoration") == "none solid rgb(0, 0, 0)") {
       $(this).css("text-decoration", "line-through");
