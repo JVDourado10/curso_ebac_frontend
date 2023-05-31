@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário c/ Plugins jQuery</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Formulário c/ Plugins jQuery</h1>
+    </div>
+  </header>
+  <main>
+    <form class="container">
+      <label for="nome">Nome Completo</label>
+      <input type="text" name="nome" id="nome">
+      <label for="e-mail">E-mail</label>
+      <input type="email" name="e-mail" id="e-mail" placeholder="exemplo@email.com">
+      <label for="telefone">Telefone</label>
+      <input type="tel" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX">
+      <label for="cpf">CPF</label>
+      <input type="text" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX">
+      <label for="endereco">Endereço Completo</label>
+      <input type="text" name="endereco" id="endereco">
+      <label for="cep">CEP</label>
+      <input type="text" name="cep" id="cep" placeholder="XXXXX-XXX">
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./jquery.mask.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
